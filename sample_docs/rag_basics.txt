@@ -1,0 +1,5 @@
+Retrieval-Augmented Generation (RAG) is an architecture that combines information retrieval with a text generation model.
+A document-based RAG application first extracts text from source files, divides that text into chunks, and converts each chunk to an embedding vector.
+At question time, the user's query is converted into another vector. The system searches for the most similar chunks, then passes them and the question to a language model.
+RAG can help ground answers in trusted uploaded documents, but it does not guarantee perfect factual accuracy. Relevant passages and citations should be checked by the user.
+In the DocuMind application, embedding vectors are created locally using a Sentence Transformer model. Document chunk search uses cosine similarity calculated with NumPy. Gemini generates answers from the retrieved passages.

@@ -1,0 +1,43 @@
+# API keys and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.key
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Cache and generated files
+.pytest_cache/
+.cache/
+*.log
+
+# Local vector databases
+chroma_db/
+chroma_data/
+vector_store/
+
+# Private documents
+*.pdf
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.streamlit/secrets.toml
+*.pyc
+.DS_Store
+
+
+
+rag_core_backup.py
